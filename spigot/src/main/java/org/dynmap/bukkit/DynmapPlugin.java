@@ -1313,7 +1313,7 @@ public class DynmapPlugin extends JavaPlugin implements DynmapAPI {
         
         if(onblockphysics) {
             Listener physlistener = new Listener() {
-                @EventHandler(priority=EventPriority.MONITOR, ignoreCancelled=true)
+                //@EventHandler(priority=EventPriority.MONITOR, ignoreCancelled=true)
                 public void onBlockPhysics(BlockPhysicsEvent event) {
                     Block b = event.getBlock();
                     Material m = b.getType();
